@@ -12,12 +12,12 @@ type ShoppingCart = {
 };
 
 
-const addToCart = (cart: ShoppingCart, product: Product): void => {
+const addToCarti = (cart: ShoppingCart, product: Product): void => {
   cart.items.push(product);
   cart.total += product.price;
 };
 
-const removeFromCart = (cart: ShoppingCart, productId: number): void => {
+const removeFromCarti = (cart: ShoppingCart, productId: number): void => {
   const index = cart.items.findIndex((item) => item.id === productId);
   if (index !== -1) {
     const removedItem = cart.items.splice(index, 1)[0];
@@ -26,20 +26,20 @@ const removeFromCart = (cart: ShoppingCart, productId: number): void => {
 };
 
 
-const product1: Product = {
+const produst1: Product = {
   id: 1,
   name: "Laptop",
   price: 999,
   category: "Electronics",
 };
-const product2: Product = {
+const produst2: Product = {
   id: 2,
   name: "Headphones",
   price: 99,
   category: "Electronics",
 };
 
-const cart: ShoppingCart = { items: [], total: 0 };
+const cast: ShoppingCart = { items: [], total: 0 };
 
 addToCart(cart, product1);
 console.log("Cart after adding product1:", cart);
