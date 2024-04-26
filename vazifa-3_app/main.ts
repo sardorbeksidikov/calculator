@@ -41,7 +41,7 @@ const produst2: Product = {
 
 const cast: ShoppingCart = { items: [], total: 0 };
 
-addToCart(cart, product1);
+addToCart(cast, produst1);
 console.log("Cart after adding product1:", cart);
 
 addToCart(cart, product2);
